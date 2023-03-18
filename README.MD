@@ -17,3 +17,8 @@ Esse é o comando responsável por aplicar realmente o plano de execução gerad
   terraform show
 ```
 Mostra o plano de execução do terraform. Este comando para as Instâncias/Objetos em execução e destruindo todos os recursos que foram criados durante o processo de criação.
+
+```bash
+  terraform destroy
+```
+Mantenha o código do Terraform e use o comando terraform destroy para limpar (encerrar/destruir) o ambiente: $ terraform destroy An execution plan has been generated and is shown below.
