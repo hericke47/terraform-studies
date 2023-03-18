@@ -22,3 +22,13 @@ Mostra o plano de execução do terraform. Este comando para as Instâncias/Obje
   terraform destroy
 ```
 Mantenha o código do Terraform e use o comando terraform destroy para limpar (encerrar/destruir) o ambiente: $ terraform destroy An execution plan has been generated and is shown below.
+
+[Documentação terraform](https://registry.terraform.io/)
+
+## Credenciais com a aws
+
+para usar as credenciais de forma segura é interessante usar a cli da aws, podendo configurar uma chave de acesso com este comando:
+
+```bash
+   aws configure --profile "tf01"
+```
