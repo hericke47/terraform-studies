@@ -15,6 +15,7 @@ Nesse comando, o Terraform irá ler todo o arquivo de recursos (main.tf) e criar
 ### Flags
 
 - -var-file=""
+- out="tfplan.out" gera arquivo com dados informados no plan
 
 ## Apply
 
@@ -27,6 +28,7 @@ Esse é o comando responsável por aplicar realmente o plano de execução gerad
 
 - -auto-approve
 - -var-file=""
+- "tfplan.out" executa o apply usando arquivo de saída do plan usando o comando -out
 
 ## Show
 
