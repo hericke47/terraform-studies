@@ -4,6 +4,16 @@ resource "aws_s3_bucket" "this" {
   tags = local.common_tags
 }
 
+resource "aws_s3_bucket" "manual" { // criado manualmente
+  bucket = "meu-bucket-criado-1234"
+
+  tags = {
+    Criado    = "19/03/2023"
+    Importado = "19/03/2023"
+    ManagedBy = "Terraform"
+  }
+}
+
 resource "aws_s3_bucket_object" "this" {
   bucket       = aws_s3_bucket.this.bucket
   key          = "config/${local.ip_filepath}"
