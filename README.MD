@@ -77,6 +77,16 @@ Deixa o código em um formato que o terraform recomenda
 
 Console interativo podendo listar valores e atributos de recursos por exemplo "aws_s3_bucket_object.this"
 
+## Import
+
+```bash
+  terraform import
+```
+
+O Terraform oferece suporte à importação de recursos usando o subcomando terraform import . O comando import usa dois argumentos: o endereço e o ID do recurso. O endereço do recurso é um identificador que aponta para uma instância de recurso em uma configuração.
+
+Exemplo: ``` terraform import aws_s3_bucket.manual meu-bucket-criado-1234 ```. Usado na pasta `terraform-basico/05-interpolacao-locals-outputs`
+
 [Documentação terraform](https://registry.terraform.io/)
 
 ## Credenciais com a aws
