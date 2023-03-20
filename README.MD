@@ -4,6 +4,12 @@
   terraform init
 ```
 
+### Flags
+
+- -backend=true
+- -backend-config="backend.hcl"
+
+
 Esse é o primeiro comando que utilizamos na execução do Terraform sendo responsável por iniciar a execução do nosso arquivo. Nesse passo é verificado o provider que será utilizado e realizado todos os downloads das dependências necessárias.
 
 ## Plan
@@ -67,6 +73,10 @@ Valida se o código está com sintaxe correta
   terraform fmt
 ```
 
+### Flags
+
+- -recursive
+
 Deixa o código em um formato que o terraform recomenda
 
 ## Console
@@ -92,7 +102,6 @@ Exemplo: ``` terraform import aws_s3_bucket.manual meu-bucket-criado-1234 ```. U
 ## Credenciais com a aws
 
 [AWS-CLI-INSTALL](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-
 
 Para usar as credenciais de forma segura é interessante usar a cli da aws, podendo configurar uma chave de acesso com este comando:
 
